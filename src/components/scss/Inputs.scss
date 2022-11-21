@@ -1,0 +1,83 @@
+@use 'variables' as v;
+
+/* contenedor proncipal */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-family: v.$Font;
+    background-color: v.$Very-light-grayish-cyan;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: right;
+    color: v.$Very-dark-cyan;
+        
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    display: none;
+}
+
+
+
+/* Contendor de los inputs y labels */
+.label-input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.input-cash{
+    position: relative;
+}
+
+.placeholder{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 12px;
+    height: 20px;
+    position: absolute;
+    left: 8px;
+    top: 40px;
+}
+
+.placeholder-cash{
+    background-image: url('../../assets/images/icon-dollar.svg');
+}
+
+.placeholder-people{
+    background-image: url('../../assets/images/icon-person.svg');
+    width: 20px;
+}
+
+
+
+.label{
+    color: v.$Dark-grayish-cyan;
+    font-size: .7em;
+}
+
+.label-button{
+    font-size: .7em;
+}
+
+
+/* Contenedor de los botones */
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 145px);
+    gap: 10px;
+}
+
+.label-people{
+    font-size: .7em;
+    letter-spacing: 1px;
+}

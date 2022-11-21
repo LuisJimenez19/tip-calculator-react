@@ -1,0 +1,10 @@
+@use 'variables' as v;
+
+.main-container{
+    background-color: v.$White;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    border-radius: 20px;
+}

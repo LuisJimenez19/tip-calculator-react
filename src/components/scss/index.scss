@@ -1,0 +1,26 @@
+@use 'variables' as v;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: v.$Font;
+    font-size: v.$F-size;
+}
+
+.body{
+    background-color: v.$Light-grayish-cyan;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 20px;
+}
+
+.title{
+    text-align: center;
+    font-family: v.$Font;
+    font-size: v.$F-size;
+    color: v.$Very-dark-cyan;
+}
