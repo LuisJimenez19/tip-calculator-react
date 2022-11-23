@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+.attribution {
+    text-align: center;
+    font-size: .7em;
+    color: v.$Very-dark-cyan;
+
+    
+    a {
+        font-size: .8em;
+        text-decoration: none;
+        color: v.$cyan;
+        transition: .2s;
+
+        &:hover {
+            display: inline-block;
+            transform: scale(1.05);
+            color: v.$Very-light-grayish-cyan;
+            border-bottom: 1px dashed v.$Very-light-grayish-cyan;
+        }
+    }
+  
+
+    @media (max-width:768px) {
+        font-size: .6em;
+    }
+}
