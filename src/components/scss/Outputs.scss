@@ -1,0 +1,61 @@
+@use 'variables' as v;
+
+.outputs{
+    background-color: v.$Very-dark-cyan;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    
+    border-radius: 20px;
+    padding: 30px;
+    @media (min-width:992px) {
+        width: 50%;
+    }
+
+    .output{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__label{
+            font-size: .8em;
+            color: v.$White;
+
+            span{
+                font-size: .7em;
+                color: v.$Dark-grayish-cyan;
+            }
+        }
+
+        &__amount{
+            color: v.$cyan;
+            font-size: 1.2em;
+
+            span{
+                font-size: 1em;
+                @media (min-width:992px) {
+                    font-size: 1.7em;
+                }
+            }
+        }
+
+    }
+    .reset-btn{
+        background-color: v.$cyan;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        color: v.$Very-dark-cyan;
+        padding: 8px 0;
+        cursor: pointer;
+
+        transition: .2s;
+        &:hover{
+            background-color: v.$Light-grayish-cyan;
+            transform: scale(.98);
+        }
+    }
+}
